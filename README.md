@@ -28,7 +28,7 @@ https://youtu.be/x1tVxp-x8Bg
 ## 参考文献
 
 * RaspberryPiで学ぶROSロボット入門【日経BP社】
- * https://github.com/ryuichiueda/pimouse_vision_control
+ * https://github.com/ryuichiueda/pimouse_vision_control （MITライセンス）
  * 10章の顔検出プログラムを参考に，OpenCVによる処理をエッジ検出と円検出に変更しました．
  * また，グレースケール画像，カラー画像を同様の関数でパブリッシュ出来るようにしました．
  
