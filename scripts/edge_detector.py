@@ -13,7 +13,7 @@ class EdgeDetector():
         self.bridge = CvBridge()
         self.img_org = None
         self.canny = rospy.Publisher("img_canny", Image, queue_size=1)
-        self.edge = rospy.Publisher("img_edge", Image, queue_size=1)
+        self.circle = rospy.Publisher("img_circle", Image, queue_size=1)
 
     def get_image(self, img):
         try:
@@ -38,7 +38,7 @@ class EdgeDetector():
         except:
             pass
         
-        self.monitor(self.edge, img_circle)
+        self.monitor(self.circle, img_circle)
 
     def monitor(self, pub, img):
         if img.ndim == 2:
